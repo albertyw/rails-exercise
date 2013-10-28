@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
-    def new
+  def new
 
-    end
+  end
+
+  def create
+    render text: params[:post].inspect
+  end
 end
